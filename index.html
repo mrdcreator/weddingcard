@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wedding-Card</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+ 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+  <style type="text/css">
+   body
+   {
+    background: url(wedbg.jpg);
+background-position: fixed;
+   }
+    .flip-card
+    {
+      background-color: transparent;
+      perspective: 1000px;
+      width: 400px;
+      height:620px;
+      margin: 10px auto;
+    }
+    @media only screen and (max-width: 900px) {
+  .flip-card 
+  {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+}
+    .flip-card-inner
+    {
+      position: relative;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      transition: .6s;
+      transform-style: preserve-3d;
+       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+       transition-delay: 0.5s;
+    }
+    .flip-card:hover .flip-card-inner
+    {
+      transform: rotateY(180deg);
+    }
+    .flip-card-front, .flip-card-back
+    {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      -webkit-backface-visibility: hidden;
+      
+    }
+    .flip-card-front
+    {
+      background-color: #bbb;
+      color: #fff;
+      background-image: url(fff.jpg);
+    }
+    .flip-card-front .mantra p
+    {
+    font-size: 14px;
+      color: #fff;
+    }
+     .flip-card-front h6
+    {
+      color: #fff;
+    }
+     .flip-card-front .mantra span
+    {
+
+      font-family: 'Tangerine', cursive;
+      font-size: 22px;
+    }
+    .flip-card-back {
+  background-image: url(pj.jpg);
+  background-repeat: no-repeat;
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-card-front button
+{
+
+border-style: none;
+  padding: 8px 20px;
+  border: 2px solid yellow;
+  color: #fff;
+  border-radius: 30px;
+  background: initial;
+}
+.flip-card-back p
+{
+  font-size: 18px;
+}
+.rsvp
+{
+  float: left;
+  text-align: left;
+  font-size: 12px;
+  padding-left: 10px;
+}
+.rsvprgt
+{
+  float: right;
+  text-align: right;
+  font-size: 12px;
+  padding-right: 10px;
+}
+
+  </style>
+
+</head>
+<body>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <br />
+      <img src="ganesha.png" height="130px";>
+     <div class="mantra"><h6 lang="hi">॥ श्री गणेशाय नमः ॥</h6>
+     <p lang="hi">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br>
+निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥
+</p>
+<img src="line.png" width="200px;">
+<br /><br />
+<span>आयु ० - कुमारी अंजना<br><span style="font-size: 14px;">(सुपुत्री - श्री प्रभुनाथ प्रसाद एवं श्रीमती गुड्डी देवी)</span><br /><span style="font-size: 22px; margin: 8px;">------ संग ------</span><br />चि ० - आकाश<br><span style="font-size: 14px;">(सुपुत्र - श्री राकेश एवं श्रीमती पूजा देवी )</span></span>
+<br />
+<img src="line.png" width="200px;"></p></div>
+
+<h5 style="padding-left: 10px; padding-right: 10px;">स्थान: मुहालजलकर (मुसहरटोला), पोस्ट - पांडेय कोड़र, जिला - गोरखपुर (उ0 प्र0) <br /><br /><button><strong>शुभ दिनांक</strong></button></h5>
+    </div>
+    <div class="flip-card-back">
+      <br><img src="ganesha.png" height="90px";>
+      <br>
+     <p>|| मांगलिक कार्यक्रम ||<br><img src="line.png" width="200px;">
+      <br>
+_____ शुभ तिलक _____<br><br>17 / अप्रैल / 2021<br><br>
+_____ शुभ हल्दी _____<br><br>21 / अप्रैल / 2021<br><br>
+_____ शुभ विवाह _____<br><br>22 / अप्रैल / 2021<br><br>
+<img src="wed.png" width="85px;"></p>
+<div class="rsvp">
+  दर्शनाभिलाषी:<br>
+  अरुण, नन्हे, अंकुश एवं समस्त <br /> परिवार व मित्रगण |
+
+</div>
+<div class="rsvprgt">
+  विनीत:<br>
+  प्रभुनाथ प्रसाद<br>
+  मो 0 - 7897300581 
+</div>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>
