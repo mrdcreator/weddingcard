@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="birthday1.css">
+	<title>Birthday Card</title>
+</head>
+<body>
+<div class="card">
+  <a href="tel:918287833426" class="fa fa-phone" style="font-size:20px; color:#fff; padding: 5px; float: left; text-decoration: none;"></a>
+  <a href="https://api.whatsapp.com/send?phone=918287833426" class="fa fa-whatsapp" style="font-size:20px; color:#fff; padding: 5px; float: right; text-decoration: none;"></a>
+	<div class="pic"><img src="face.jpg"></div>
+	<span style="font-size: 30px;">Happy Birthday</span><br><span style="font-size: 25px; margin-top: 30px;">Name Here :)</span>
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="text">"Wish you a many many happy returns of the day. May God bless you with health, wealth and prosperity in your life."</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="text">"On your birthday, I wish you a very happy and joyful year ahead. May God love and care you, as you do for other. May you live a long and beautiful life."
+  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="text">"ENJOY every moment of your life, may everyday bring something new and exciting for you, may this birthday turn out to be as amazing as you!"</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<div class="icons">
+ <i class="fa fa-twitter" style="font-size:20px; color:#900c3f; padding: 5px 6px; background-color: #fff; border-radius: 50%;"></i>
+   <i class="fa fa-linkedin" style="font-size:20px; color:#900c3f; padding: 5px 7px; background-color: #fff; border-radius: 50%;"></i>
+   <i class="fa fa-facebook" style="font-size:20px; color:#900c3f; padding: 5px 10px; background-color: #fff; border-radius: 50%;"></i>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+</div>
+
+</div>
+</body>
+</html>
